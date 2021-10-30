@@ -3,7 +3,7 @@ import "./Home.css"
 
 export default function () {
     return (
-        <React.Fragment>
+        <React.Fragment><h1> Ти чмошнік!!!</h1>
         </React.Fragment>
     )
 }
