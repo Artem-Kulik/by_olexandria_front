@@ -1,0 +1,42 @@
+.header{
+    margin: 2rem;
+    height: 10rem;
+    background-color: #bb99b7;
+    display: flex;
+    align-items: center;    
+}
+
+.header-part{
+    float: left;
+    height: 70%;
+    width: 20%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+
+    background-color: #ecc8c9;
+}
+
+.body-fon{
+    margin: 4rem 4rem 2rem 4rem;
+    height: 45rem;
+    background-color: #f5d4d6;
+
+    display: flex;
+    align-items: center;   
+}
+
+.try-block{
+    width: 30%;
+    height: 70%;
+    margin-left: 2.5%;
+
+    background-color: #c6a78f;
+}
+
+/*
+#e48826
+#bb99b7
+#ecc8c9
+#c6a78f
+#a0b3a8
+*/
