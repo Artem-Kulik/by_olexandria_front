@@ -1,0 +1,68 @@
+.main{
+    height: 100vh;
+
+    background-image: url(../Images/fon-cut.png);
+    background-size: cover;
+    /* filter: blur(3px);
+    opacity: 0.7; */
+} 
+
+.between{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.15);
+
+
+    border-bottom: 2px ridge rgb(255, 255, 255);
+    
+}
+
+.links-place{
+    height: 15vh;    
+
+    display: flex;
+    align-items: center;    
+}
+.ihtis{
+    width: 160px;
+    height: 80px;
+    margin: 0 4rem;
+    
+    background-image: url(../Images/istis.png);
+    background-size: cover;
+}
+.link-text{
+    color: white;
+
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-right: 3rem;
+}
+
+.buttons-place{
+    height: 15vh;    
+
+    display: flex;
+    align-items: center;   
+}
+.reg-text{
+    color: white;
+
+    font-size: 18px;
+    letter-spacing: 1px;
+
+    padding: 0.8rem 2rem;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.phrase{
+    color: white;
+
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-family: Arkhip;
+
+    margin: 0 3rem;    
+}
