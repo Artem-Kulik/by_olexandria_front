@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.css"
 import MainAd from "./MainAd";
 import RegBtn from "./RegBtn";
-
+import EveningAd from "./EveningAd";
 
 function Home() {
     const [part, setPart] = React.useState("Main");
@@ -39,7 +39,7 @@ function Home() {
                 }
                 {
                     part === "Evening" &&
-                    <h1>Evining</h1>
+                    <EveningAd />
                 }
                 {
                     part === "House" &&
