@@ -1,5 +1,8 @@
 import React from "react";
 import "./Home.css"
+import AdPart from "./AdPart";
+import RegBtn from "./RegBtn";
+
 
 export default function () {
     return (
@@ -15,7 +18,7 @@ export default function () {
                         <span className="link-text">Виїзди молоді</span>
                     </div>
                     <div className="buttons-place">
-                        <intup className="reg-text" type="button">Реєструватися</intup>
+                        <RegBtn />
                         <span className="phrase">БОГ Є ЛЮБОВ
                             <svg width="1em" height="1em" viewBox="0 0 15 15" class="bi bi-suit-heart" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M8 6.236l.894-1.789c.222-.443.607-1.08 1.152-1.595C10.582 2.345 11.224 
@@ -30,7 +33,8 @@ export default function () {
                     </div>
                 </div>
 
-                <div className="content"> 
+                <div className="content">
+                    <AdPart />
                 </div>
             </div>
         </React.Fragment>

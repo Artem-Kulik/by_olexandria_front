@@ -1,6 +1,6 @@
 .main{
-    height: 100vh;   /* vh - максимальний розмін екрану ( 100vh подібне до 100%, но відсотки вираховуються відносно заданої велечини попереднього блоку, 
-                      а vh сам підтягує розмір екрана - компа, планшета, телефона) */
+    /*height: 100vh;*/      /* vh - максимальний розмін екрану ( 100vh подібне до 100%, но відсотки вираховуються відносно заданої велечини попереднього блоку, 
+                         а vh сам підтягує розмір екрана - компа, планшета, телефона) */
     background-image: url(../Images/fon-cut.png);
     background-size: cover;
     /* filter: blur(3px);   розмиття
@@ -8,7 +8,7 @@
 } 
 
 .between{
-    position: fixed;   /*позиція ніколи не змінюється - вона фіксована*/
+    /*position: fixed; */  /*позиція ніколи не змінюється - вона фіксована*/
     display: flex;
     justify-content: space-between;    /* щоб одні елементи прижати вправо, інші в ліво (space-between = пропуск-між) */
     width: 100%;
@@ -18,7 +18,7 @@
 }
 
 .links-place{
-    height: 15vh;    
+    height: 12vh;    
 
     display: flex;
     align-items: center;    
@@ -46,7 +46,7 @@
 }
 
 .buttons-place{
-    height: 15vh;    
+    height: 12vh;    
 
     display: flex;
     align-items: center;   
@@ -55,17 +55,7 @@
     color: white;
 
     font-size: 18px;
-    letter-spacing: 1px;      
-
-    padding: 0.8rem 2rem;
-    border: 1px solid white;
-    border-radius: 5px;
-}
-.reg-text:hover{
-    cursor: pointer;
-    transition: 1s;
-    color: #b9aa82;
-    border: 1px solid #b9aa82;
+    letter-spacing: 1px;  
 }
 
 .phrase{
@@ -73,7 +63,7 @@
 
     font-size: 18px;
     letter-spacing: 2px;
-    font-family: Arkhip;       /* назва шрифту, який я попередньо встановив на свій коип'ютер. якщо цей шрифт не встановлений - просто не спрацює ))) */
+    font-family: Arkhip;       /* назва шрифту, який я попередньо встановив на свій комп'ютер. якщо цей шрифт не встановлений - стиль не підтягнеться ))) */
 
     margin: 0 3rem;    
 }
@@ -85,6 +75,6 @@
 
 
 .content{
-    height: calc(85vh - 2px);       /* class ~between~ has borber 2px */
-    padding-top: calc(15vh + 2px);  /* class ~between~ has borber 2px */
+    /* height: calc(88vh - 2px); */        /* class ~between~ has borber 2px */
+    /* padding-top: calc(6vh + 2px); */    /* class ~between~ has borber 2px */
 }
