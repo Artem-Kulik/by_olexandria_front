@@ -1,21 +1,20 @@
 .main{
-    height: 100vh;
-
+    height: 100vh;   /* vh - максимальний розмін екрану ( 100vh подібне до 100%, но відсотки вираховуються відносно заданої велечини попереднього блоку, 
+                      а vh сам підтягує розмір екрана - компа, планшета, телефона) */
     background-image: url(../Images/fon-cut.png);
     background-size: cover;
-    /* filter: blur(3px);
-    opacity: 0.7; */
+    /* filter: blur(3px);   розмиття
+    opacity: 0.7;           прозорість */
 } 
 
 .between{
+    position: fixed;   /*позиція ніколи не змінюється - вона фіксована*/
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;    /* щоб одні елементи прижати вправо, інші в ліво (space-between = пропуск-між) */
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.15);
-
+    background-color: rgba(0, 0, 0, 0.35);
 
     border-bottom: 2px ridge rgb(255, 255, 255);
-    
 }
 
 .links-place{
@@ -27,17 +26,23 @@
 .ihtis{
     width: 160px;
     height: 80px;
-    margin: 0 4rem;
+    margin: 0 4rem;      /* rem - велечина, яку рекомендовано використовувати замість px (но є моменти коли величину потрібно задавати тільки пікселями) */
     
-    background-image: url(../Images/istis.png);
+    background-image: url(../Images/istis.png);    /* шлях до фото в проекті */
     background-size: cover;
 }
 .link-text{
     color: white;
 
     font-size: 18px;
-    letter-spacing: 1px;
+    letter-spacing: 1px;       /* пропуски між буквами */
     margin-right: 3rem;
+}
+.link-text:hover{     /* (hover = наведення) операція спрацьовує після наведення мишкою на об'єкт */
+    cursor: pointer;  /* (cursor = наша мишка) змінює картику мишки на посилання/розтягування/хрестик і тп. */
+    transition: 1s;   /* вказує час, за який всі ці проперті встановляться (сміниться колір і добавиться підсвітка за 1 секунду) */
+    color: #b9aa82;
+    filter: drop-shadow(0 0 0.5px #b9aa82);   /* добавляє підсвітку до текста/блока (приймає 4 параметри: відступ зверху, відступ зліва, розмір пісвітки і її колір ) */
 }
 
 .buttons-place{
@@ -50,11 +55,17 @@
     color: white;
 
     font-size: 18px;
-    letter-spacing: 1px;
+    letter-spacing: 1px;      
 
     padding: 0.8rem 2rem;
     border: 1px solid white;
     border-radius: 5px;
+}
+.reg-text:hover{
+    cursor: pointer;
+    transition: 1s;
+    color: #b9aa82;
+    border: 1px solid #b9aa82;
 }
 
 .phrase{
@@ -62,7 +73,18 @@
 
     font-size: 18px;
     letter-spacing: 2px;
-    font-family: Arkhip;
+    font-family: Arkhip;       /* назва шрифту, який я попередньо встановив на свій коип'ютер. якщо цей шрифт не встановлений - просто не спрацює ))) */
 
     margin: 0 3rem;    
+}
+.phrase:hover{
+    cursor: alias;
+    transition: 1s;
+    color: #f5afb9;
+}
+
+
+.content{
+    height: calc(85vh - 2px);       /* class ~between~ has borber 2px */
+    padding-top: calc(15vh + 2px);  /* class ~between~ has borber 2px */
 }
