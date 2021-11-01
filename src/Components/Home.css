@@ -72,9 +72,3 @@
     transition: 1s;
     color: #f5afb9;
 }
-
-
-.content{
-    /* height: calc(88vh - 2px); */        /* class ~between~ has borber 2px */
-    /* padding-top: calc(6vh + 2px); */    /* class ~between~ has borber 2px */
-}
