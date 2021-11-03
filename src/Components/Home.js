@@ -1,11 +1,25 @@
 import React from "react";
 import "./Home.css"
-import MainAd from "./MainAd";
 import RegBtn from "./RegBtn";
-import EveningAd from "./EveningAd";
+import Loader from "./Loader/Loader"
+import MainAd from "./Ads/MainAd"
+import EveningAd from "./Ads/EveningAd"
 
 function Home() {
     const [part, setPart] = React.useState("Main");
+    const [loading, setLoading] = React.useState(true);
+
+    function Loading() {
+        setTimeout(() => {
+            setLoading(false)
+        }, 1000)
+    }
+
+    function ChangePart_StartLoader(part){    /* change part = змінити частину  (функції рекомендовано називати відносно функціоналу, який вони виконують) */
+        setPart(part);
+        setLoading(true);
+    }
+
     return (
         <React.Fragment>
             <div className="main">
@@ -13,14 +27,13 @@ function Home() {
                     <div className="links-place">
                         <div className="ihtis">
                         </div>
-                        <span className="link-text" onClick={() => setPart("Main")}>Основні оголошення</span>
-                        <span className="link-text" onClick={() => setPart("Evening")}>Вечірні зібрання</span>
-                        <span className="link-text" onClick={() => setPart("House")}>Домашні групи</span>
-                        <span className="link-text" onClick={() => setPart("Field")}>Виїзди молоді</span>  {/* Field = Виїзди (но дослівно ~поле~) */}
+                        <span className="link-text" onClick={() => ChangePart_StartLoader("Main")}>Основні оголошення</span>
+                        <span className="link-text" onClick={() => ChangePart_StartLoader("Evening")}>Вечірні зібрання</span>
+                        <span className="link-text" onClick={() => ChangePart_StartLoader("Songs")}>Каталог пісень</span>
                     </div>
                     <div className="buttons-place">
                         <RegBtn />
-                        <span className="phrase" onClick={() => setPart("Main")}>БОГ Є ЛЮБОВ
+                        <span className="phrase" onClick={() => ChangePart_StartLoader("Main")}>БОГ Є ЛЮБОВ
                             <svg width="1em" height="1em" viewBox="0 0 15 15" class="bi bi-suit-heart" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M8 6.236l.894-1.789c.222-.443.607-1.08 1.152-1.595C10.582 2.345 11.224 
                                 2 12 2c1.676 0 3 1.326 3 2.92 0 1.211-.554 2.066-1.868 3.37-.337.334-.721.695-1.146 1.093C10.878 10.423 
@@ -33,24 +46,17 @@ function Home() {
                         </span>
                     </div>
                 </div>
-                {
-                    part === "Main" &&
-                    <MainAd />
-                }
-                {
-                    part === "Evening" &&
-                    <EveningAd />
-                }
-                {
-                    part === "House" &&
-                    <h1>House</h1>
-                }
-                {
-                    part === "Field" &&
-                    <h1>Field</h1>
+                {loading && <Loader />}       {/* якщо loading = true, то показати(&&) <Loader /> */}
+                {loading && Loading()}        {/* якщо loading = true, то запустити функцію(&&) Loading() */}   {/*не знаю як показати лоадер і запустити функцію однією перевіркою :( */}
+                {loading ? null :              /* якщо loading = true, то(?) показати null (поки грузить нічого показувати не потрібно), : = інакше (якщо loading = false) */
+                    part === "Main" ? <MainAd />        /* якщо loading = false - і пішли перевірки по part, який він і, відповідно, який диз показати */
+                        :
+                        part === "Evening" ? <EveningAd />
+                            :
+                            part === "Songs" ? <h1>Songs</h1>
+                                : <MainAd />
                 }
             </div>
-        </React.Fragment>
-    )
+        </React.Fragment>   )
 }
 export default Home;

@@ -69,7 +69,9 @@ export default function () {
                                                     </div>
                                                     <div className="timeline-body">
                                                         <div className="timeline-header">
-                                                            <span className="userimage"><img src="https://icons-for-free.com/iconfiles/png/512/windows+10+cinema+icons+Family-1320567861682845728.png" alt="" /></span>
+                                                            <span className="userimage">
+                                                                <img src="https://icons-for-free.com/iconfiles/png/512/windows+10+cinema+icons+Family-1320567861682845728.png" alt="" />
+                                                            </span>
                                                             <span className="username">Сімейне зібрання</span>
                                                         </div>
                                                         <div className="timeline-content">
@@ -96,12 +98,10 @@ export default function () {
                                                             <span className="username">Вечірнє зібрання</span>
                                                         </div>
                                                         <div className="timeline-content">
-
                                                             <p className="lead">
                                                                 <i className="fa fa-quote-left fa-fw pull-left">Інформація про...</i>
                                                             </p>
                                                             <div className="timeline-footer">
-
                                                                 <div className="timeline-likes">
                                                                     <div className="stats-right">
                                                                         <span className="stats-text">Присутніх на зібранні було ...</span>
@@ -110,7 +110,6 @@ export default function () {
                                                                         <span className="stats-total">Головна думка</span>
                                                                     </div>
                                                                 </div>
-
                                                             </div>
                                                         </div>
                                                     </div>

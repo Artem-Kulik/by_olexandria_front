@@ -4,8 +4,6 @@
     /* padding-top: calc(6vh + 2px); */    /* class ~between~ has borber 2px */
 }
 
-
-
 .text-ellipsis,
 .text-nowrap {
     white-space: nowrap!important
