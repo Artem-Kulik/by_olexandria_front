@@ -2,8 +2,9 @@ import React from "react";
 import "./Home.css"
 import RegBtn from "./RegBtn";
 import Loader from "./Loader/Loader"
-import MainAd from "./Ads/MainAd"
-import EveningAd from "./Ads/EveningAd"
+import MainAd from "./Parts/MainAd"
+import EveningAd from "./Parts/EveningAd"
+import Songs from "./Parts/Songs";
 
 function Home() {
     const [part, setPart] = React.useState("Main");
@@ -55,7 +56,7 @@ function Home() {
                         :
                         part === "Evening" ? <EveningAd />
                             :
-                            part === "Songs" ? <h1>Songs</h1>
+                            part === "Songs" ? <Songs />
                                 : <MainAd />
                 }
             </div>

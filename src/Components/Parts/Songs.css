@@ -1,0 +1,31 @@
+.main-text-place{  
+    padding: 3vh 0 6vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-text{
+    color: white;
+    font-size: 36px;
+    letter-spacing: 3px;  
+}
+
+.songs-place{
+    height: 45rem;
+    background-color: brown;
+}
+
+.song{    
+    width: 20%;
+    padding: 1.5rem 0rem;
+
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+
+    float: left;
+    margin-left: 4%;
+    margin-bottom: 4%;
+
+    text-align: center;
+}
