@@ -15,9 +15,11 @@ function Home() {
         }, 1000)
     }
 
-    function ChangePart_StartLoader(part){    /* change part = змінити частину  (функції рекомендовано називати відносно функціоналу, який вони виконують) */
-        setPart(part);
-        setLoading(true);
+    function ChangePart_StartLoader(newpart) {    /* change part = змінити частину  (функції рекомендовано називати відносно роботи, яку вони виконують) */
+        if (part != newpart) {
+            setPart(newpart);
+            setLoading(true);
+        }
     }
 
     return (
@@ -34,7 +36,7 @@ function Home() {
                     <div className="buttons-place">
                         <RegBtn />
                         <span className="phrase" onClick={() => ChangePart_StartLoader("Main")}>БОГ Є ЛЮБОВ
-                            <svg width="1em" height="1em" viewBox="0 0 15 15" class="bi bi-suit-heart" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="1em" height="1em" viewBox="0 0 15 15" className="bi bi-suit-heart" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M8 6.236l.894-1.789c.222-.443.607-1.08 1.152-1.595C10.582 2.345 11.224 
                                 2 12 2c1.676 0 3 1.326 3 2.92 0 1.211-.554 2.066-1.868 3.37-.337.334-.721.695-1.146 1.093C10.878 10.423 
                                 9.5 11.717 8 13.447c-1.5-1.73-2.878-3.024-3.986-4.064-.425-.398-.81-.76-1.146-1.093C1.554 6.986 1 6.131 
@@ -57,6 +59,7 @@ function Home() {
                                 : <MainAd />
                 }
             </div>
-        </React.Fragment>   )
+        </React.Fragment>
+    )
 }
 export default Home;
