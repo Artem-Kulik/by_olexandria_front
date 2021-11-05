@@ -55,7 +55,27 @@ export default function () {
                                                     <a href="javascript:;">&nbsp;</a>
                                                 </div>
                                                 <div className="timeline-body">
-                                                    Loading...
+                                                <div className="timeline-header">
+                                                        <span className="userimage">
+                                                            <img src="https://us.123rf.com/450wm/ylivdesign/ylivdesign1611/ylivdesign161102999/67676058-icono-de-la-biblia-el-ejemplo-simple-de-iconos-de-vectores-para-la-web-biblia.jpg?ver=6" alt="" />
+                                                        </span>
+                                                        <span className="username">Розбір Євангелії від Івана</span>
+                                                    </div>
+                                                    <div className="timeline-content">
+                                                        <p className="lead">
+                                                            <i className="fa fa-quote-left fa-fw pull-left">Інформація про розділ...</i>
+                                                        </p>
+                                                        <div className="timeline-footer">
+                                                            <div className="timeline-likes">
+                                                                <div className="stats-right">
+                                                                    <span className="stats-text">Присутніх на зібранні було ...</span>
+                                                                </div>
+                                                                <div className="stats">
+                                                                    <span className="stats-total">Головна думка</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </li>
                                             <li>
@@ -157,7 +177,27 @@ export default function () {
                                                     <a href="javascript:;">&nbsp;</a>
                                                 </div>
                                                 <div className="timeline-body">
-                                                    Loading...
+                                                <div className="timeline-header">
+                                                        <span className="userimage">
+                                                            <img src="https://us.123rf.com/450wm/ylivdesign/ylivdesign1611/ylivdesign161102999/67676058-icono-de-la-biblia-el-ejemplo-simple-de-iconos-de-vectores-para-la-web-biblia.jpg?ver=6" alt="" />
+                                                        </span>
+                                                        <span className="username">Розбір Євангелії від Івана</span>
+                                                    </div>
+                                                    <div className="timeline-content">
+                                                        <p className="lead">
+                                                            <i className="fa fa-quote-left fa-fw pull-left">Інформація про розділ...</i>
+                                                        </p>
+                                                        <div className="timeline-footer">
+                                                            <div className="timeline-likes">
+                                                                <div className="stats-right">
+                                                                    <span className="stats-text">Присутніх на зібранні було ...</span>
+                                                                </div>
+                                                                <div className="stats">
+                                                                    <span className="stats-total">Головна думка</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </li>
                                             <li>
