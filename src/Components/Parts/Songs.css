@@ -28,5 +28,5 @@
     margin-bottom: 4%;
 
     text-align: center;
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(90% 0%, 100% 30%, 100% 100%, 10% 100%, 0% 70%, 0% 0%);
 }
