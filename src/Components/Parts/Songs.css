@@ -28,4 +28,5 @@
     margin-bottom: 4%;
 
     text-align: center;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
