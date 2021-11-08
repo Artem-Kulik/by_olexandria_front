@@ -6,12 +6,7 @@ import Song from "./Song";
 
 function AllSongs() {
     const [songs, setSongs] = React.useState([
-        { id: 1, title: "song title 1", lyrics: "The lyrics will be posted here" },
-        { id: 2, title: "song title 2", lyrics: "The lyrics will be posted here" },
-        { id: 3, title: "song title 3", lyrics: "The lyrics will be posted here" },
-        { id: 4, title: "song title 4", lyrics: "The lyrics will be posted here" },
-        { id: 5, title: "song title 5", lyrics: "The lyrics will be posted here" },
-        { id: 6, title: "song title 6", lyrics: "The lyrics will be posted here" }
+        { id: 1, title: "Все одно так любиш", lyrics: "lyrinc...", video: "https://www.youtube.com/watch?v=E81hiHAs2qM"}
     ]);
     const [part, setPart] = React.useState("songs");
 
